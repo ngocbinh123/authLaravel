@@ -16,21 +16,20 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
-
+//login
 Route::get('/login',array('uses'=>'HomeController@showLogin'));
 Route::post('/login',array('uses'=>'HomeController@doLogin'));
 
+//register
 Route::get('/register',array('uses'=>'HomeController@showRegister'));
 Route::post('/register',array('uses'=>'HomeController@doRegister'));
 
-Route::get('/editprofile',array('before'=>'auth',function(){
-	return View::make('editProfile');
-}));
-
-/*
-Route::get('logout',function(){
-	Auth::logout();
-	return Redirect::to('login');
-});*/
-
+//logout 
 Route::get('logout',array('uses'=>'HomeController@doLogout'));
+
+//profile 
+Route::get('/editprofile',array('before'=>'auth','uses'=>'HomeController@showEditProfile'));
+
+//password remind
+//Route::get('/passwordremind',array('uses'=>'RemindersController@getRemind'));
+Route::controller('password', 'RemindersController');

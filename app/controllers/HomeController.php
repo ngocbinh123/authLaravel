@@ -22,7 +22,11 @@ class HomeController extends BaseController {
 
 	//login
 	public function showLogin(){
-		return View::make('login');
+		if(Auth::check()){
+			return Redirect::to('editprofile');
+		}else{
+			return View::make('login');
+		}
 	}
 
 	public function doLogin(){
@@ -31,6 +35,7 @@ class HomeController extends BaseController {
 			'password'=> Input::get('password')
 		);
 
+		// check a user data is exist in database. 
 		if(Auth::attempt($userData)){
 			return Redirect::to('editprofile');
 		}else{
@@ -56,5 +61,10 @@ class HomeController extends BaseController {
 	public function doLogout(){
 		Auth::logout();
 		return Redirect::to('login');
+	}
+
+	// profile 
+	public function showEditProfile(){
+		return View::make('editProfile');
 	}
 }
