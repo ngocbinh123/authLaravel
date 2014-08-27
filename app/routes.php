@@ -16,49 +16,21 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
-Route::get('/login',function(){
-	return View::make('login');
-});
 
-Route::post('/login',function(){
-	$userData = array(
-		'email'=>Input::get('user_input'),
-		'password'=> Input::get('password')
-	);
+Route::get('/login',array('uses'=>'HomeController@showLogin'));
+Route::post('/login',array('uses'=>'HomeController@doLogin'));
 
-	if(Auth::attempt($userData)){
-		return Redirect::to('editprofile');
-	}else{
-		return Redirect::to('login');
-	}
-});
-
-
-Route::get('/register',function(){
-	return View::make('register');
-});
-
-Route::post('/register',function(){
-	/*$userData = array(
-		'username'=>Input::get('username'),
-		'email'=>Input::get('email'),
-		'password'=> Input::get('password')
-	);
-	$user = new User($userData);*/
-	$user = new User();
-	$user->username=Input::get('username');
-	$user->email=Input::get('email');
-	$user->password=Hash::make(Input::get('password'));
-	$user->save();
-	return Redirect::to('login');
-});
+Route::get('/register',array('uses'=>'HomeController@showRegister'));
+Route::post('/register',array('uses'=>'HomeController@doRegister'));
 
 Route::get('/editprofile',array('before'=>'auth',function(){
 	return View::make('editProfile');
 }));
 
-
+/*
 Route::get('logout',function(){
 	Auth::logout();
 	return Redirect::to('login');
-});
+});*/
+
+Route::get('logout',array('uses'=>'HomeController@doLogout'));
