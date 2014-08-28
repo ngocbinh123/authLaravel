@@ -31,5 +31,9 @@ Route::get('logout',array('uses'=>'HomeController@doLogout'));
 Route::get('/editprofile',array('before'=>'auth','uses'=>'HomeController@showEditProfile'));
 
 //password remind
-//Route::get('/passwordremind',array('uses'=>'RemindersController@getRemind'));
-Route::controller('password', 'RemindersController');
+Route::get('/passwordremind',array('uses'=>'RemindersController@getRemind','as'=>'password.remind'));
+Route::post('/passwordremind',array('uses'=>'RemindersController@postRemind'));
+
+//reset password 
+Route::get('/passwordreset/{token}',array('uses'=>'RemindersController@getReset'));
+Route::post('/passwordreset/{token}',array('uses'=>'RemindersController@postReset'));

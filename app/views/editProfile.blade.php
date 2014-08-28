@@ -6,5 +6,10 @@
 
 @section('content')
 	<h1>EDIT PROFILE</h1>
-	<a href="{{Asset('logout')}}">Logout</a>
+
+	<form method ='post' action="{{Asset('editprofile')}}" id='editprofile'>
+		{{Form::token()}}
+		<a href="{{Asset('logout')}}">Logout</a>
+		<a href="{{Asset('passwordreset/{token}')}}">Reset password</a>
+	</form>
 @endsection
