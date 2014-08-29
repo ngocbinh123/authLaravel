@@ -11,10 +11,20 @@
 |
 */
 
-Route::get('/', function()
+/*Route::get('/', function()
 {
 	return View::make('hello');
 });
+
+Route::filter('auth.basic', function()
+{
+    return Auth::basic();
+});
+
+Route::filter('basic.once', function()
+{
+    return Auth::onceBasic();
+});*/
 
 //login
 Route::get('/login',array('uses'=>'HomeController@showLogin'));
@@ -31,9 +41,11 @@ Route::get('logout',array('uses'=>'HomeController@doLogout'));
 Route::get('/editprofile',array('before'=>'auth','uses'=>'HomeController@showEditProfile'));
 
 //password remind
-Route::get('/passwordremind',array('uses'=>'RemindersController@getRemind','as'=>'password.remind'));
-Route::post('/passwordremind',array('uses'=>'RemindersController@postRemind'));
+Route::get('/password/remind',array('uses'=>'RemindersController@getRemind','as'=>'password.remind'));
+Route::post('/password/remind',array('uses'=>'RemindersController@postRemind'));
 
 //reset password 
-Route::get('/passwordreset/{token}',array('uses'=>'RemindersController@getReset'));
-Route::post('/passwordreset/{token}',array('uses'=>'RemindersController@postReset'));
+Route::get('/password/reset/{token}',array('uses'=>'RemindersController@getReset'));
+Route::post('/password/reset/{token}',array('uses'=>'RemindersController@postReset'));
+
+Route::get('/temp',array('uses'=>'HomeController@temp'));

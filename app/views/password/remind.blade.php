@@ -9,8 +9,12 @@
 		<h3>Reminder password</h3>
 	</div>
 	<form method="post" action="{{ action('RemindersController@postRemind') }}" id='remind'>
-	    <input type="email" name="email">
-	    <input type="submit" value="Send Reminder">
+		<div>
+	   		<input type="email" name="email" placeholder='email'>
+		</div>
+		<div>
+			<input type="submit" value="Send Reminder" class='btn btn-primary'>
+		</div>
 	</form>
 @endsection
 

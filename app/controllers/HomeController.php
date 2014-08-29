@@ -67,4 +67,8 @@ class HomeController extends BaseController {
 	public function showEditProfile(){
 		return View::make('editProfile');
 	}
+
+	public function temp(){
+		 echo  Crypt::decrypt('nguyen');;
+	}
 }

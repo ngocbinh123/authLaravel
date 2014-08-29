@@ -13,16 +13,26 @@
   .container .error {
     color: red; }
 
-#login, #register {
+#login ul {
+  list-style: none;
+  padding: 10px 0;
+  margin-bottom: 0; }
+  #login ul li {
+    text-align: center; }
+
+#remind div, #resetPassword div {
+  margin-bottom: 10px; }
+
+#login, #register, #remind, #resetPassword {
   padding: 10px;
   margin: 10px 0;
   border: 4px solid #f4726d;
   border-radius: 10px; }
-  #login input, #register input {
+  #login input, #register input, #remind input, #resetPassword input {
     width: 100%; }
-  #login button, #register button {
+  #login button, #register button, #remind button, #resetPassword button {
     width: 100%;
     margin: 10px 0; }
-  #login p, #register p {
+  #login p, #register p, #remind p, #resetPassword p {
     font-weight: bold;
     margin: 10px 0 5px 0; }

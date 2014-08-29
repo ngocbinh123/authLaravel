@@ -6,14 +6,27 @@
 
 @section('content')
 	<div class='titleForm'>
-		<h3>Reminder password</h3>
+		<h3>Reset password</h3>
 	</div>
-	<form action="{{ action('RemindersController@postReset') }}" method="POST">
+	<form action="{{ action('RemindersController@postReset') }}" method="POST" id='resetPassword'>
+
 	    <input type="hidden" name="token" value="{{ $token }}">
-	    <input type="email" name="email">
-	    <input type="password" name="password">
-	    <input type="password" name="password_confirmation">
-	    <input type="submit" value="Reset Password">
+
+	    <div>
+	    	<p>Email:</p>
+	    	<input type="email" name="email">
+	    </div>
+	    <div>
+	    	<p>New Password:</p>
+	    	<input type="password" name="password">
+	    </div>
+	    <div>
+	    	<p>Password comfirmation:</p>
+	    	<input type="password" name="password_confirmation">
+	    </div>
+	    <div>
+	    	<input type="submit" value="Reset Password" class='btn btn-primary'>
+	    </div> 
 	</form>
 @endsection
 
