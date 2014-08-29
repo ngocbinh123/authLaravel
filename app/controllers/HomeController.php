@@ -69,6 +69,7 @@ class HomeController extends BaseController {
 	}
 
 	public function temp(){
-		 echo  Crypt::decrypt('nguyen');;
+		//echo Hash::make('secret');
+		echo Crypt::decrypt('$2y$10$Po2sX6lr7.0kb.WqUGSEku969bF8RJVphXIYlM1jYVhpSBuKEAxSW');
 	}
 }
