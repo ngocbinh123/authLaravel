@@ -10,6 +10,7 @@
 	</div>
 	
 	<form method="post" action="{{Asset('login')}}" id='login'>
+		{{Form::token()}}
 		<div class='userName'>
 			<p>Email:</p>
 			<input type="text" name='user_input' id='user_input' placeholder='email'>
