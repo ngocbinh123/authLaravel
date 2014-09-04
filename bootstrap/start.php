@@ -30,6 +30,10 @@ $env = $app->detectEnvironment(array(
 
 ));
 
+/*$env = $app->detectEnvironment(function(){
+	return getenv('APP_ENV') ?: 'local';
+});
+*/
 /*
 |--------------------------------------------------------------------------
 | Bind Paths

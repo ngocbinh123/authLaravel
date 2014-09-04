@@ -26,6 +26,16 @@ Route::filter('basic.once', function()
     return Auth::onceBasic();
 });*/
 
+
+
+
+
+/*------------- HTTP Basic Authentication------------------*/
+//login
+Route::get('/basicauth',array('before'=>'auth.basic','uses'=>'HomeController@getBasicAuth'));
+
+
+/*-------------Form authentication------------------*/
 //login
 Route::get('/login',array('uses'=>'HomeController@showLogin'));
 Route::post('/login',array('uses'=>'HomeController@doLogin'));
@@ -49,3 +59,8 @@ Route::get('/password/reset/{token}',array('uses'=>'RemindersController@getReset
 Route::post('/password/reset/{token}',array('uses'=>'RemindersController@postReset'));
 
 Route::get('/temp',array('uses'=>'HomeController@temp'));
+
+//billing - cashier 
+Route::get('/billing',array('uses'=>'BillingController@getBilling'));
+Route::post('/billing',array('uses'=>'BillingController@postBilling'));
+

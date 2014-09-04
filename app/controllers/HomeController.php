@@ -15,11 +15,16 @@ class HomeController extends BaseController {
 	|
 	*/
 
-	public function showWelcome()
-	{
+	public function showWelcome(){
 		return View::make('hello');
 	}
 
+	/*------------- HTTP Basic Authentication------------------*/
+	public function getBasicAuth(){
+		return View::make('basicAuth');
+	}
+
+	/*-------------Form authentication------------------*/
 	//login
 	public function showLogin(){
 		if(Auth::check()){
@@ -73,3 +78,4 @@ class HomeController extends BaseController {
 		echo Crypt::decrypt('$2y$10$Po2sX6lr7.0kb.WqUGSEku969bF8RJVphXIYlM1jYVhpSBuKEAxSW');
 	}
 }
+
