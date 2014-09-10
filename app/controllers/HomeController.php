@@ -42,6 +42,7 @@ class HomeController extends BaseController {
 
 		// check a user data is exist in database. 
 		if(Auth::attempt($userData)){
+			//return Session::all();
 			return Redirect::to('editprofile');
 		}else{
 			return Redirect::to('login');
