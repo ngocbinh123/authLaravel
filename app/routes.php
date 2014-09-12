@@ -64,3 +64,5 @@ Route::get('/temp',array('uses'=>'HomeController@temp'));
 Route::get('/billing',array('uses'=>'BillingController@getBilling'));
 Route::post('/billing',array('uses'=>'BillingController@postBilling'));
 
+Route::get('/upgrade',array('uses'=>'BillingController@upgrade'));
+Route::get('/cancel',array('uses'=>'BillingController@cancel'));

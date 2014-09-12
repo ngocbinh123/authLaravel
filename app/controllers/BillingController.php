@@ -23,5 +23,14 @@ class BillingController extends BaseController {
 		Auth::user()->subscription('monthly')->create($token);
 		return 'Done';
 	}
+	public function upgrade(){
+		Auth::user()->subscription('yearly')->swap();
+		return 'Upgraded';
+	}
+
+	public function cancel(){
+		Auth::user()->subscription()->cancel();
+		return 'cancel';
+	}
 }
 
