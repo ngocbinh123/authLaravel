@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateProjectlistTable extends Migration {
+class InsertDataProductList extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -13,11 +13,14 @@ class CreateProjectlistTable extends Migration {
 	public function up()
 	{
 		//
-		Schema::create('ProductList',function($table){
-			$table->increments('id');
-			$table->string('name');
-			$table->timestamps();
-		});
+		$arrProduct = array('Phone','Laptop','Linh kien','Other');
+		foreach ($arrProduct  as $item) {
+			# code...
+			$productList = new ProductList(); 
+			$productList->name=$item;
+			$productList->save();
+		}
+
 	}
 
 	/**

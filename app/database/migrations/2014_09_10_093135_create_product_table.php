@@ -15,7 +15,8 @@ class CreateProductTable extends Migration {
 		//
 		Schema::create('Product',function($table){
 			$table->increments('id');
-			$table->integer('type_id');
+			$table->primary('id');
+			
 			$table->string('name');	
 			$table->string('manufacturers');
 			$table->string('sim');
@@ -31,6 +32,10 @@ class CreateProductTable extends Migration {
 			$table->string('other');
 			$table->integer('number');
 			$table->integer('price');
+			$talbe->string
+			$table->timestamps();
+			$table->integer('type_id')->unsigned();
+			$table->foreign('type_id')->references('id')->on('producttype');
 		});
 	}
 

@@ -16,7 +16,9 @@ class CreateProjecttypeTable extends Migration {
 		Schema::create('ProductType',function($table){
 			$table->increments('id');
 			$table->string('name');
-			$table->integer('list_id');
+			$table->integer('list_id')->unsigned();
+			$table->foreign('list_id')->references('id')->on('productlist');
+			$table->timestamps();
 		});
 
 	}
