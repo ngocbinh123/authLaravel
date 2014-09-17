@@ -13,26 +13,28 @@ class CreateProductTable extends Migration {
 	public function up()
 	{
 		//
+
+
 		Schema::create('Product',function($table){
 			$table->increments('id');
-			$table->primary('id');
-			
+
 			$table->string('name');	
 			$table->string('manufacturers');
 			$table->string('sim');
 			$table->string('weight');
-			$table->string('screenSize');
-			$table->string('screenType'); 
+			$table->string('screen');
 			$table->string('memory');
-			$table->string('chipset');
+
 			$table->string('CPU');
-			$table->string('GPU');
-			$table->string('camera');
-			$table->string('pin');
+			$table->string('RAM');
+			$table->string('maincamera');
+			$table->string('subcamera');
+			$table->string('power');
+			$table->string('opera');
 			$table->string('other');
-			$table->integer('number');
+
 			$table->integer('price');
-			$talbe->string
+			$table->string('img');
 			$table->timestamps();
 			$table->integer('type_id')->unsigned();
 			$table->foreign('type_id')->references('id')->on('producttype');
