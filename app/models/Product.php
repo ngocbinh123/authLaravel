@@ -20,20 +20,20 @@ class Product extends Eloquent implements UserInterface, RemindableInterface, Bi
 	protected $fillable=array('id','name','manufacturers','sim','weight','screen','maincamera','subcamera','opera','RAM','memory','power','price','img','other','type_id');
 }
 
-$product = new Product(); 
-			$productType->name=$item["name"];
-			$productType->CPU=$item["CPU"];
-			$productType->manufacturers=$item["manufacturers"];
-			$productType->sim=$item["sim"];
-			$productType->weight=$item["weight"];
-			$productType->screen=$item["screen"];
-			$productType->maincamera=$item["maincamera"];
-			$productType->subcamera=$item["subcamera"];
-			$productType->opera=$item["opera"];
-			$productType->RAM=$item["RAM"];
-			$productType->memory=$item["memory"];
-			$productType->power=$item["power"];
-			$productType->price=$item["price"];
-			$productType->img=$item["img"];
-			$productType->other=$item["other"];
-			$productType->list_id=$item["type_id"];
+// $product = new Product(); 
+// 			$productType->name=$item["name"];
+// 			$productType->CPU=$item["CPU"];
+// 			$productType->manufacturers=$item["manufacturers"];
+// 			$productType->sim=$item["sim"];
+// 			$productType->weight=$item["weight"];
+// 			$productType->screen=$item["screen"];
+// 			$productType->maincamera=$item["maincamera"];
+// 			$productType->subcamera=$item["subcamera"];
+// 			$productType->opera=$item["opera"];
+// 			$productType->RAM=$item["RAM"];
+// 			$productType->memory=$item["memory"];
+// 			$productType->power=$item["power"];
+// 			$productType->price=$item["price"];
+// 			$productType->img=$item["img"];
+// 			$productType->other=$item["other"];
+// 			$productType->list_id=$item["type_id"];
