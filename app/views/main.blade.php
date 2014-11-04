@@ -10,6 +10,8 @@
 	<script type="text/javascript" src="{{Asset('assets/js/myValidate.js')}}"></script>
 </head>
 <body>
+	<!-- Header Carousel -->
+    <header id="myCarousel" class="carousel slide">@include('sliderBar')</header>
 	<div class="content container">@yield('content')</div>
 </body>
 </html>
