@@ -74,9 +74,9 @@ class HomeController extends BaseController {
 		return View::make('editProfile');
 	}
 
-	public function temp(){
-		//echo Hash::make('secret');
-		echo Crypt::decrypt('$2y$10$Po2sX6lr7.0kb.WqUGSEku969bF8RJVphXIYlM1jYVhpSBuKEAxSW');
+	public function getProductList(){
+		
 	}
+
 }
 
