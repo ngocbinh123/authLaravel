@@ -66,3 +66,6 @@ Route::post('/billing',array('uses'=>'BillingController@postBilling'));
 
 Route::get('/upgrade',array('uses'=>'BillingController@upgrade'));
 Route::get('/cancel',array('uses'=>'BillingController@cancel'));
+
+Route::get('/getdata',array('uses'=>'HomeController@getProductList'));
+

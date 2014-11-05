@@ -75,7 +75,8 @@ class HomeController extends BaseController {
 	}
 
 	public function getProductList(){
-		
+		$proLs = DB::table('productlist')->get();
+		return $proLs;
 	}
 
 }
