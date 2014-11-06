@@ -11,7 +11,7 @@
 </head>
 <body>
 	<!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">@include('topMenu')</nav>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">@include('topMenu',compact("data"))</nav>
 	<!-- Header Carousel -->
     <header id="myCarousel" class="carousel slide">@include('sliderBar')</header>
 	<div class="content container">@yield('content')</div>

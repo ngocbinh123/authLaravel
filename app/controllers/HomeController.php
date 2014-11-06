@@ -15,10 +15,6 @@ class HomeController extends BaseController {
 	|
 	*/
 
-	public function showWelcome(){
-		return View::make('hello');
-	}
-
 	/*------------- HTTP Basic Authentication------------------*/
 	public function getBasicAuth(){
 		return View::make('basicAuth');
@@ -28,7 +24,7 @@ class HomeController extends BaseController {
 	//login
 	public function showLogin(){
 		if(Auth::check()){
-			return Redirect::to('editprofile');
+			return Redirect::to('/');// go to home page
 		}else{
 			return View::make('login');
 		}
@@ -42,8 +38,7 @@ class HomeController extends BaseController {
 
 		// check a user data is exist in database. 
 		if(Auth::attempt($userData)){
-			//return Session::all();
-			return Redirect::to('editprofile');
+			return Redirect::to('/');// go to home page
 		}else{
 			return Redirect::to('login');
 		}
@@ -69,11 +64,18 @@ class HomeController extends BaseController {
 		return Redirect::to('login');
 	}
 
+	/*-------------Show page------------------*/
+	public function getTop(){
+		$data=DB::table('productlist')->get();
+		return View::make('top.top', compact('data'));
+	}
+
 	// profile 
 	public function showEditProfile(){
 		return View::make('editProfile');
 	}
 
+	/*-------------Get data------------------*/
 	public function getProductList(){
 		$proLs = DB::table('productlist')->get();
 		return $proLs;

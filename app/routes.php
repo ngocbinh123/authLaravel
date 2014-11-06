@@ -47,6 +47,9 @@ Route::post('/register',array('uses'=>'HomeController@doRegister'));
 //logout 
 Route::get('logout',array('uses'=>'HomeController@doLogout'));
 
+//top
+Route::get('/',array('before'=>'auth','uses'=>'HomeController@getTop'));
+
 //profile 
 Route::get('/editprofile',array('before'=>'auth','uses'=>'HomeController@showEditProfile'));
 
