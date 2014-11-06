@@ -15,8 +15,19 @@
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Product<b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                    @foreach ($data as $item)
-                        <li><a href="{{Asset($item->name)}}">{{$item->name}}</a></li>
+                    @foreach ($data['pList'] as $subMenu)
+                        <li id="{{$subMenu->name}}" class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{$subMenu->name}}<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                @foreach($data['pType'] as $item)
+                                    @if ($subMenu->id==$item->list_id)
+                                        <li id="{{$item->name}}">
+                                            <a href="{{Asset($item->name)}}">{{$item->name}}</a>
+                                        </li>
+                                    @endif
+                                @endforeach
+                            </ul>
+                        </li>
                     @endforeach
                 </ul>
             </li>

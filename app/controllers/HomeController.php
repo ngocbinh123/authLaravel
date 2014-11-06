@@ -23,10 +23,11 @@ class HomeController extends BaseController {
 	/*-------------Form authentication------------------*/
 	//login
 	public function showLogin(){
+		$data= DB::table('productlist')->get();
 		if(Auth::check()){
-			return Redirect::to('/');// go to home page
+			return Redirect::to('/',compact('data'));// go to home page
 		}else{
-			return View::make('login');
+			return View::make('login',compact('data'));
 		}
 	}
 
@@ -66,7 +67,8 @@ class HomeController extends BaseController {
 
 	/*-------------Show page------------------*/
 	public function getTop(){
-		$data=DB::table('productlist')->get();
+		$data['pList']=DB::table('productList')->get();
+		$data['pType']=DB::table('productType')->get();
 		return View::make('top.top', compact('data'));
 	}
 
@@ -77,7 +79,7 @@ class HomeController extends BaseController {
 
 	/*-------------Get data------------------*/
 	public function getProductList(){
-		$proLs = DB::table('productlist')->get();
+		$proLs = DB::table('productType')->get();
 		return $proLs;
 	}
 
