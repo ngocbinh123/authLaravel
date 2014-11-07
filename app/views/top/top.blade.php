@@ -1,4 +1,4 @@
-@extends('main',compact("data"))
+@extends('main')
 
 @section('title')
 	Hom Page

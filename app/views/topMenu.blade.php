@@ -14,11 +14,11 @@
         <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Product<b class="caret"></b></a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu drop ">
                     @foreach ($data['pList'] as $subMenu)
                         <li id="{{$subMenu->name}}" class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{$subMenu->name}}<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{$subMenu->name}}</b></a>
+                            <ul class="drop">
                                 @foreach($data['pType'] as $item)
                                     @if ($subMenu->id==$item->list_id)
                                         <li id="{{$item->name}}">

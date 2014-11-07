@@ -27,6 +27,39 @@ header.carousel {
 @media (max-width: 767px) {
   header.carousel .carousel {
     height: 70%; } }
+nav.navbar a {
+  text-decoration: none; }
+nav.navbar ul.drop {
+  list-style: none;
+  margin: 0px;
+  padding: 0px; }
+  nav.navbar ul.drop li, nav.navbar ul.drop li a {
+    border-bottom: 1px solid #fbfbfb;
+    eight: 32px;
+    line-height: 32px;
+    padding-left: 5px;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: darkblue; }
+  nav.navbar ul.drop li {
+    background-color: white; }
+    nav.navbar ul.drop li ul.drop {
+      width: 200px;
+      position: absolute;
+      top: 0px;
+      left: 160px;
+      display: none;
+      z-index: 1000; }
+  nav.navbar ul.drop li:hover > ul.drop {
+    display: block; }
+  nav.navbar ul.drop li:hover > ul.drop:hover {
+    display: block; }
+nav.navbar ul.drop li:hover, nav.navbar ul.drop li a:hover {
+  display: block;
+  background: #fbfbfb;
+  color: red; }
+
 .container {
   width: 100% !important;
   padding: 10px; }
