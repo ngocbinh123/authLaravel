@@ -21,7 +21,7 @@
                             <ul class="drop">
                                 @foreach($data['pType'] as $item)
                                     @if ($subMenu->id==$item->list_id)
-                                        <li id="{{$item->name}}">
+                                        <li id="{{$item->name}}"> 
                                             <a href="{{Asset($item->name)}}">{{$item->name}}</a>
                                         </li>
                                     @endif
