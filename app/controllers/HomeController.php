@@ -15,63 +15,14 @@ class HomeController extends BaseController {
 	|
 	*/
 
-	/*------------- HTTP Basic Authentication------------------*/
-	public function getBasicAuth(){
-		return View::make('basicAuth');
-	}
-
-	/*-------------Form authentication------------------*/
-	//login
-	public function showLogin(){
-		$data['pList']=DB::table('productList')->get();
-		$data['pType']=DB::table('productType')->get();
-		if(Auth::check()){
-			return Redirect::to('/',compact('data'));// go to home page
-		}else{
-			return View::make('login',compact('data'));
-		}
-	}
-
-	public function doLogin(){
-		$userData = array(
-			'email'=>Input::get('user_input'),
-			'password'=> Input::get('password')
-		);
-
-		// check a user data is exist in database. 
-		if(Auth::attempt($userData)){
-			return Redirect::to('/');// go to home page
-		}else{
-			return Redirect::to('login');
-		}
-	}
-
-	//register 
-	public function showRegister(){
-		return View::make('register');
-	}
-
-	public function doRegister(){
-		$user = new User();
-		$user->username=Input::get('username');
-		$user->email=Input::get('email');
-		$user->password=Hash::make(Input::get('password'));
-		$user->save();
-		return Redirect::to('login');
-	}
-
-	//logout 
-	public function doLogout(){
-		Auth::logout();
-		return Redirect::to('login');
-	}
+	
+	public static $data['pList']=App::make('ProductListController')->{'getAll'}();
+	public static $data['pType']=App::make('ProductTypeController')->{'getAll'}();
 
 	/*-------------Show page------------------*/
-	public function getTop(){
-		$data['pList']=DB::table('productList')->get();
-		$data['pType']=DB::table('productType')->get();
+	public function getHome(){
 		$data['product']=DB::table('product')->get();
-		return View::make('top.top', compact('data'));
+		return View::make('home.index', compact('data'));
 	}
 
 	// profile 
@@ -80,10 +31,10 @@ class HomeController extends BaseController {
 	}
 
 	/*-------------Get data------------------*/
-	public function getProductList(){
+	/*public function getProductList(){
 		$proLs = DB::table('productType')->get();
 		return $proLs;
-	}
+	}*/
 
 }
 

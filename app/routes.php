@@ -27,31 +27,21 @@ Route::filter('basic.once', function()
 });*/
 
 
-
-
-
-/*------------- HTTP Basic Authentication------------------*/
-//login
-Route::get('/basicauth',array('before'=>'auth.basic','uses'=>'HomeController@getBasicAuth'));
-
+//Home
+Route::get('/',array('before'=>'auth','uses'=>'HomeController@getHome'));
 
 /*-------------Form authentication------------------*/
 //login
-Route::get('/login',array('uses'=>'HomeController@showLogin'));
-Route::post('/login',array('uses'=>'HomeController@doLogin'));
+Route::get('/login',array('uses'=>'UserController@getLogin'));
+Route::post('/login',array('uses'=>'UserController@postLogin'));
 
 //register
-Route::get('/register',array('uses'=>'HomeController@showRegister'));
-Route::post('/register',array('uses'=>'HomeController@doRegister'));
+Route::get('/register',array('uses'=>'UserController@getRegister'));
+Route::post('/register',array('uses'=>'UserController@postRegister'));
 
 //logout 
-Route::get('logout',array('uses'=>'HomeController@doLogout'));
+Route::get('logout',array('uses'=>'UserController@getLogout'));
 
-//top
-Route::get('/',array('before'=>'auth','uses'=>'HomeController@getTop'));
-
-//profile 
-Route::get('/editprofile',array('before'=>'auth','uses'=>'HomeController@showEditProfile'));
 
 //password remind
 Route::get('/password/remind',array('uses'=>'RemindersController@getRemind','as'=>'password.remind'));
@@ -61,7 +51,6 @@ Route::post('/password/remind',array('uses'=>'RemindersController@postRemind'));
 Route::get('/password/reset/{token}',array('uses'=>'RemindersController@getReset'));
 Route::post('/password/reset/{token}',array('uses'=>'RemindersController@postReset'));
 
-Route::get('/temp',array('uses'=>'HomeController@temp'));
 
 //billing - cashier 
 Route::get('/billing',array('uses'=>'BillingController@getBilling'));
