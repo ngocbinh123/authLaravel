@@ -16,7 +16,7 @@ class ProductTableSeeder extends Seeder{
 					"memory"=>"16gb",
 					"power"=>"1440 mah",
 					"price"=>"12000000vnd",
-					"img"=>asset('img/Iphone/iphone5.png'),
+					"img"=>"/assets/imgimg/Iphone/iphone5.png",
 					"other"=>"",
 					"type_id"=>1
 				], [
@@ -33,7 +33,7 @@ class ProductTableSeeder extends Seeder{
 					"memory"=>"32gb",
 					"power"=>"1440 mah",
 					"price"=>"12000000vnd",
-					"img"=>asset('img/Iphone/iphone5.png'),
+					"img"=>"/assets/img/Iphone/iphone5.png",
 					"other"=>"",
 					"type_id"=>1
 				],
@@ -51,7 +51,7 @@ class ProductTableSeeder extends Seeder{
 					"memory"=>"16gb",
 					"power"=>"Li-Ion 2600mAh",
 					"price"=>"11630000vnd",
-					"img"=>asset('img/Samsung/galaxys4.png'),
+					"img"=>"/assets/img/Samsung/galaxys4.png",
 					"other"=>"",
 					"type_id"=>1
 				],
@@ -69,7 +69,7 @@ class ProductTableSeeder extends Seeder{
 					"memory"=>"16gb",
 					"power"=>"Li-Ion 2800mAh",
 					"price"=>"11790000vnd",
-					"img"=>asset('img/Samsung/galaxys5.png'),
+					"img"=>"/assets/img/Samsung/galaxys5.png",
 					"other"=>"",
 					"type_id"=>1
 				]];

@@ -16,12 +16,14 @@ class HomeController extends BaseController {
 	*/
 
 	
-	public static $data['pList']=App::make('ProductListController')->{'getAll'}();
-	public static $data['pType']=App::make('ProductTypeController')->{'getAll'}();
+	//public static $data['pList']=App::make('ProductListController')->{'getAll'}();
+	//public static $data['pType']=App::make('ProductTypeController')->{'getAll'}();
 
 	/*-------------Show page------------------*/
 	public function getHome(){
-		$data['product']=DB::table('product')->get();
+		$data['pList']=App::make('ProductListController')->{'getDataProductListAll'}();
+		$data['pType']=App::make('ProductTypeController')->{'getDataProductTypeAll'}();
+		$data['pro']=App::make('ProductController')->{'getDataProductAll'}();
 		return View::make('home.index', compact('data'));
 	}
 
