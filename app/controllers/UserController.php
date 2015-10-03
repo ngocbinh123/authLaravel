@@ -25,6 +25,7 @@ class UserController extends BaseController {
 	public function getLogin(){
 		$data['pList']=DB::table('productList')->get();
 		$data['pType']=DB::table('productType')->get();
+		$data['pro']=App::make('ProductController')->{'getDataProductAll'}();
 		if(Auth::check()){
 			return Redirect::to('/',compact('data'));// go to home page
 		}else{

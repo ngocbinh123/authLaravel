@@ -16,7 +16,7 @@ class ProductTableSeeder extends Seeder{
 					"memory"=>"16gb",
 					"power"=>"1440 mah",
 					"price"=>"12000000vnd",
-					"img"=>asset('img/Iphone/iphone5.png'),
+					"img"=>"/assets/imgimg/Iphone/iphone5.png",
 					"other"=>"",
 					"type_id"=>1
 				], [
@@ -33,7 +33,7 @@ class ProductTableSeeder extends Seeder{
 					"memory"=>"32gb",
 					"power"=>"1440 mah",
 					"price"=>"12000000vnd",
-					"img"=>asset('img/Iphone/iphone5.png'),
+					"img"=>"/assets/img/Iphone/iphone5.png",
 					"other"=>"",
 					"type_id"=>1
 				],
@@ -51,7 +51,7 @@ class ProductTableSeeder extends Seeder{
 					"memory"=>"16gb",
 					"power"=>"Li-Ion 2600mAh",
 					"price"=>"11630000vnd",
-					"img"=>asset('img/Samsung/galaxys4.png'),
+					"img"=>"/assets/img/Samsung/galaxys4.png",
 					"other"=>"",
 					"type_id"=>1
 				],
@@ -69,7 +69,43 @@ class ProductTableSeeder extends Seeder{
 					"memory"=>"16gb",
 					"power"=>"Li-Ion 2800mAh",
 					"price"=>"11790000vnd",
-					"img"=>asset('img/Samsung/galaxys5.png'),
+					"img"=>"/assets/img/Samsung/galaxys5.png",
+					"other"=>"",
+					"type_id"=>1
+				],
+				[
+					"name"=>"LG G2", 
+					"manufacturers"=>"LG",
+					"sim"=>"1 sim",
+					"weight"=>"143g",
+					"screen"=>"138.5 x 70.9 x 8.9 mm",
+					"maincamera"=>"13MP",
+					"subcamera"=>"2MP",
+					"cpu"=>"Quad-core 2.26 GHz Krait 400, Adreno 330 GPU, Chipset: Qualcomm MSM8974 Snapdragon 800",
+					"opera"=>"Android OS, v4.2.2 (Jelly Bean)",
+					"ram"=>"2gb",
+					"memory"=>"16gb",
+					"power"=>"Li-Ion 2800mAh",
+					"price"=>"7499000vnd",
+					"img"=>"/assets/img/LG/g2.png",
+					"other"=>"",
+					"type_id"=>1
+				],
+				[
+					"name"=>"LG G3", 
+					"manufacturers"=>"LG",
+					"sim"=>"1 sim",
+					"weight"=>"143g",
+					"screen"=>"5.5 inch - Quad HD IPS, kích thước 138.78 mm, độ phân giải (2,560x1,440)",
+					"maincamera"=>"13MP",
+					"subcamera"=>"2.1MP",
+					"cpu"=>"Qualcomm Snapdragon 801 MSM8974AC v3 (2,5Ghz)",
+					"opera"=>"Android 4.4 (KitKat)",
+					"ram"=>"2gb",
+					"memory"=>"32gb",
+					"power"=>"3000mAh",
+					"price"=>"9900000vnd",
+					"img"=>"/assets/img/LG/g3.png",
 					"other"=>"",
 					"type_id"=>1
 				]];

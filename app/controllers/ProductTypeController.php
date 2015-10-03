@@ -1,7 +1,7 @@
 <?php
 
 class ProductTypeController extends BaseController {
-	public function getAll(){
+	public function getDataProductTypeAll(){
 		return DB::table('productType')->get();
 	}
 }

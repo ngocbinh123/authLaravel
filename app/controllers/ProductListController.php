@@ -1,7 +1,7 @@
 <?php
 
 class ProductListController extends BaseController {
-	public function getAll(){
+	public function getDataProductListAll(){
 		return DB::table('productList')->get();
 	}
 }

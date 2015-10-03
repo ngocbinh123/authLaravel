@@ -1,34 +1,41 @@
 <!-- Indicators -->
 <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
+    @for ( $i=1;$i<count($data['pro']);$i++)
+        <li data-target="#myCarousel" data-slide-to="{{$i}}"></li>
+    @endfor 
 </ol>
 
 <!-- Wrapper for slides -->
 <div class="carousel-inner">
-    <div class="item active">
-        <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');">
-            
-        </div>
-        <div class="carousel-caption">
-            <h2>Caption 1</h2>
-        </div>
-    </div>
-    <div class="item">
-        <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
-        <div class="carousel-caption">
-            <h2>Caption 2</h2>
-        </div>
-    </div>
-    <div class="item">
-        <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
-        <div class="carousel-caption">
-            <h2>Caption 3</h2>
-        </div>
-    </div>
-</div>
-
+    <?php $flag=1; ?>
+    @foreach ($data['pro'] as $item)
+        @if($flag==1)
+            <div class="item active">
+                <div class="fill" >
+                    <a href="">
+                        <img src="{{$item->img}}">
+                    </a>       
+                </div>
+                <div class="carousel-caption">
+                    <h2>{{$item->name}}</h2>
+                </div>   
+            </div> 
+            <?php $flag=0; ?> 
+        @else
+            <div class="item">
+                <div class="fill" >
+                    <a href="">
+                        <img src="{{$item->img}}">
+                    </a>       
+                </div>
+                <div class="carousel-caption">
+                    <h2>{{$item->name}}</h2>
+                </div>   
+            </div> 
+        @endif
+    @endforeach 
+ </div> 
 <!-- Controls -->
 <a class="left carousel-control" href="#myCarousel" data-slide="prev">
     <span class="icon-prev"></span>
