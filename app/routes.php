@@ -28,7 +28,7 @@ Route::filter('basic.once', function()
 
 
 //Home
-Route::get('/',array('before'=>'auth','uses'=>'HomeController@getHome'));
+Route::get('/',array('uses'=>'HomeController@getHome'));
 
 /*-------------Form authentication------------------*/
 //login

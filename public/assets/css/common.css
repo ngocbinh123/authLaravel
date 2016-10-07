@@ -13,21 +13,23 @@ body {
   /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */ }
 
 /* Home Page Carousel */
-header.carousel {
+.carousel {
   height: 50%;
   margin-top: 20px; }
-  header.carousel .item, header.carousel .item.active, header.carousel .carousel-inner {
+  .carousel .item, .carousel .item.active, .carousel .carousel-inner {
     height: 100%; }
-  header.carousel .fill {
+  .carousel .fill {
     width: 100%;
     height: 100%;
     text-align: center; }
-    header.carousel .fill a img {
+    .carousel .fill a img {
       height: 100%; }
+  .carousel .carousel-indicators {
+    bottom: -35px; }
 
 /* Responsive Styles */
 @media (max-width: 767px) {
-  header.carousel .carousel {
+  .carousel .carousel {
     height: 70%; } }
 nav.navbar a {
   text-decoration: none; }
@@ -61,6 +63,234 @@ nav.navbar ul.drop li:hover, nav.navbar ul.drop li a:hover {
   display: block;
   background: #fbfbfb;
   color: red; }
+
+header .logo {
+  display: block; }
+  header .logo img {
+    width: auto; }
+header .sticky-wrapper {
+  text-align: center; }
+  header .sticky-wrapper ul li .dropdown-content {
+    text-align: left; }
+
+/*sticky options ====================================================================================*/
+/*.sticky {
+    background: #eee;
+    padding-left: 10px;
+    padding-right: 10px;
+}*/
+body.menu_style1 #st_header_wrap .is-sticky > * {
+  width: 100%; }
+
+body.menu_style1.boxed .is-sticky, body.menu_style1.boxed .is-sticky #st_header_wrap_inner {
+  width: inherit; }
+
+/*all div as child of boxed is width: inherit  !important */
+body.boxed #st_header_wrap,
+body.boxed #st_header_wrap_inner,
+body.boxed #st_header_wrap_inner > *,
+body.boxed #st_header_wrap_inner .is-sticky,
+body.boxed #st_header_wrap_inner .is-sticky > * {
+  width: inherit !important; }
+
+body.menu_style1 .menu-item:hover .sub-toggle, .current-menu-ancestor > .sub-toggle {
+  color: white; }
+
+#menu1 {
+  background-color: white; }
+
+ul.slimmenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
+ul.slimmenu li {
+  position: relative;
+  display: inline-block; }
+
+ul.slimmenu li a {
+  display: block;
+  padding: 12px 20px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: 'Roboto', arial, helvetica, sans-serif;
+  color: #737373;
+  -webkit-transition: background-color 0.17s ease-out;
+  -moz-transition: background-color 0.17s ease-out;
+  -o-transition: background-color 0.17s ease-out;
+  -ms-transition: background-color 0.17s ease-out;
+  transition: background-color 0.17s ease-out; }
+
+ul.slimmenu li .sub-menu a {
+  padding: 12px 34px 12px 20px; }
+
+ul.slimmenu li.active > a,
+ul.slimmenu li:hover > a {
+  background: #ed8323;
+  color: #fff; }
+
+ul.slimmenu li .collapser {
+  position: absolute;
+  right: 11px;
+  top: 0;
+  width: 20px;
+  height: 100%;
+  text-align: center;
+  z-index: 999;
+  cursor: pointer; }
+
+ul.slimmenu li .collapser:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle; }
+
+ul.slimmenu li .collapser > i {
+  text-align: center;
+  color: #333;
+  font-size: 18px;
+  vertical-align: middle; }
+
+ul.slimmenu li ul {
+  margin: 0;
+  list-style: none; }
+
+ul.slimmenu li ul li {
+  display: block;
+  width: 100%; }
+
+ul.slimmenu li ul li a {
+  background-color: #333;
+  color: #fff; }
+
+ul.slimmenu li > ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 999;
+  padding: 0;
+  min-width: 170px; }
+
+ul.slimmenu li > ul > li ul {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  z-index: 999;
+  width: 100%; }
+
+ul.slimmenu.collapsed li {
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+ul.slimmenu.collapsed li ul li a {
+  background: none;
+  color: #ed8323; }
+
+ul.slimmenu.collapsed li ul li a:hover {
+  background: #ed8323;
+  color: #fff; }
+
+ul.slimmenu.collapsed li a {
+  display: -webkit-box;
+  display: -moz-box;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+ul.slimmenu.collapsed li > ul {
+  display: none;
+  position: static;
+  width: 100%;
+  padding-left: 20px; }
+
+ul.slimmenu.collapsed li .sub-collapser {
+  height: 50px;
+  width: 50px;
+  right: 0;
+  background: #c96810; }
+
+ul.slimmenu.collapsed li .sub-collapser > i {
+  color: #fff; }
+
+/*customize from 1.2.1*/
+ul.slimmenu li .sub-toggle {
+  width: 20px;
+  right: 9px; }
+
+ul.slimmenu > li {
+  border: none;
+  margin-right: 3px; }
+
+ul.slimmenu.collapsed li .sub-toggle {
+  right: 0;
+  height: 48px;
+  width: 48px; }
+
+ul.slimmenu li ul li, ul.slimmenu li {
+  background: transparent; }
+
+.menu.slimmenu.collapsed .sub-toggle i,
+.menu.slimmenu li:hover .sub-toggle i.fa,
+.menu.slimmenu li.current-menu-ancestor .sub-toggle i.fa {
+  color: white; }
+
+ul.slimmenu.collapsed li .sub-toggle {
+  background-color: #ed8323; }
+
+ul.slimmenu li .sub-toggle {
+  background-color: transparent; }
+
+.st_menu_clicked {
+  background: #ed8323;
+  color: white !important; }
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer; }
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block; }
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block; }
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1; }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block; }
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41; }
 
 .container {
   width: 100% !important;
@@ -100,3 +330,5 @@ nav.navbar ul.drop li:hover, nav.navbar ul.drop li a:hover {
   #login p, #register p, #remind p, #resetPassword p {
     font-weight: bold;
     margin: 10px 0 5px 0; }
+
+/*# sourceMappingURL=common.css.map */

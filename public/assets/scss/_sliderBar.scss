@@ -18,7 +18,7 @@ body {
 
 /* Home Page Carousel */
 
-header.carousel{
+.carousel{
 	height: 50%;
 	margin-top: 20px;
 	.item,.item.active,.carousel-inner {
@@ -35,12 +35,15 @@ header.carousel{
 	   		}
 	   }
 	}
+	.carousel-indicators{
+		bottom: -35px;
+	}
 }
 
 /* Responsive Styles */
 
 @media(max-width:767px) {
-    header.carousel .carousel {
+    .carousel .carousel {
         height: 70%;
     }
 }

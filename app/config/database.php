@@ -54,10 +54,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
+			'host'      => 'localhost:8889',
 			'database'  => 'authLaravel',
 			'username'  => 'root',
-			'password'  => '',
+			'password'  => '123456', // alway account has password => you must set password for your account
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

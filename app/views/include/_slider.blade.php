@@ -1,7 +1,6 @@
 <!-- Indicators -->
 <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    @for ( $i=1;$i<count($data['pro']);$i++)
+   @for ( $i=1;$i<count($data['pro']);$i++)
         <li data-target="#myCarousel" data-slide-to="{{$i}}"></li>
     @endfor 
 </ol>
