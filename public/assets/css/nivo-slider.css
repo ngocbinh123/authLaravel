@@ -8,11 +8,34 @@
  */
  
 /* The Nivo Slider styles */
+#slider img{
+	background-size: contain;
+}
+.header .navbar{
+	margin:0px;
+	border-width: 0px;
+}
+.slider .nivo-controlNav a.active{
+	background-position: 0 -22px;
+}
+.slider .nivo-controlNav a{
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	background: url(../img/bullets.png) no-repeat;
+	text-indent: -9999px;
+	border: 0;
+	margin: 0 2px;
+}
+
 .nivoSlider {
 	position:relative;
 	width:100%;
 	height:auto;
 	overflow: hidden;
+}
+.nivoSlider:hover .nivo-prevNav,.nivoSlider:hover .nivo-nextNav{
+	display: block;
 }
 .nivoSlider img {
 	position:absolute;
@@ -94,16 +117,29 @@
 	z-index:9;
 	cursor:pointer;
 }
+
+
+.nivo-prevNav, .nivo-nextNav{
+	background: url("../img/arrows.png");
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	display: none;
+}
 .nivo-prevNav {
 	left:0px;
+	background-position: left;
+	margin-left: 10px;
 }
 .nivo-nextNav {
 	right:0px;
+	background-position: right;
+	margin-right: 10px;
 }
 /* Control nav styles (e.g. 1,2,3...) */
 .nivo-controlNav {
 	text-align:center;
-	padding: 15px 0;
+	padding: 15px;
 }
 .nivo-controlNav a {
 	cursor:pointer;

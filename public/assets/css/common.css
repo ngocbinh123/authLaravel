@@ -1,36 +1,3 @@
-/*!
- * Start Bootstrap - Modern Business HTML Template (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-/* Global Styles */
-html,
-body {
-  height: 100%; }
-
-body {
-  padding-top: 50px;
-  /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */ }
-
-/* Home Page Carousel */
-.carousel {
-  height: 50%;
-  margin-top: 20px; }
-  .carousel .item, .carousel .item.active, .carousel .carousel-inner {
-    height: 100%; }
-  .carousel .fill {
-    width: 100%;
-    height: 100%;
-    text-align: center; }
-    .carousel .fill a img {
-      height: 100%; }
-  .carousel .carousel-indicators {
-    bottom: -35px; }
-
-/* Responsive Styles */
-@media (max-width: 767px) {
-  .carousel .carousel {
-    height: 70%; } }
 nav.navbar a {
   text-decoration: none; }
 nav.navbar ul.drop {
@@ -67,7 +34,7 @@ nav.navbar ul.drop li:hover, nav.navbar ul.drop li a:hover {
 header .logo {
   display: block; }
   header .logo img {
-    width: auto; }
+    width: 64px; }
 header .sticky-wrapper {
   text-align: center; }
   header .sticky-wrapper ul li .dropdown-content {
@@ -286,7 +253,8 @@ ul.slimmenu li .sub-toggle {
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-  display: block; }
+  display: block;
+  z-index: 1000; }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {

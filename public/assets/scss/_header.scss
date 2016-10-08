@@ -2,7 +2,8 @@ header{
 	.logo{
 		display: block;
 		img{
-			width: auto;
+			width:64px;
+
 		}
 	}
 
@@ -215,6 +216,7 @@ ul.slimmenu li .sub-toggle {background-color: transparent}
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
+    z-index: 1000;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */

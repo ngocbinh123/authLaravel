@@ -11,8 +11,15 @@
 </head>
 <body>
 	<!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">@include('include._header')</nav>
-    <div id="myCarousel" class="carousel slide">@include('include._slideDemo')</div>
+	<div class="header">
+    	<nav class="navbar navbar-inverse" role="navigation">@include('include._header')</nav>
+	</div>
+	<div class="slider">
+		<div id="myCarousels" class="carouselslide">@include('include._slideDemo')</div> 
+	</div>
 	<div class="content container">@yield('content')</div>
+	<div class="bottom">
+		bottom
+	</div>	
 </body>
 </html>

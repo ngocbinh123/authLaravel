@@ -3,8 +3,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <a class="logo" href="http://hoianexpress.com.vn/ha/">
-                        <img src="http://hoianexpress.com.vn/ha/wp-content/uploads/2016/08/logo-moi.png" alt="logo" title="Hoi An Express">
+                    <a class="logo" href="#">
+                        <img src="../public/assets/img/ic_logo.jpg" alt="logo" title="Hoi An Express">
                     </a>
                 </div>
              </div> <!--/end row-->     
