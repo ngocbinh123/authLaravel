@@ -19,7 +19,7 @@
 	</div>
 	<div class="content container">@yield('content')</div>
 	<div class="bottom">
-		bottom
+		<div id="" class="footer">@include('include._footer')</div> 
 	</div>	
 </body>
 </html>

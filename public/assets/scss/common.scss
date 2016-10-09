@@ -4,19 +4,100 @@
 .container{
 	width: 100% !important;
 	padding: 10px;
-	.titleForm{
+	.title, .title_category{
 		text-align: center;
 		background-color: $bg-title;
-		margin:0 -10px;	
-		padding: 10px;
-		h3{
-			margin: 0;
-			color: $color-title;
-			font-weight: bold;
-		}
+		color: $color-title;
+		font-weight: bold;
+		vertical-align: middle;
+		padding: 5px;
 	}
 	.error{
 		color:$color-error;
+	}
+	.first_contentrow{
+		margin: 10px;
+	}
+	.promotion_list{
+		text-align: center;
+		border: 5px solid $bg-title;
+		border-radius: 10px;
+		margin: 20px 0px 0px 0px;
+		h2{
+			color: $bg-title;
+		}
+		.promotion_item:hover,.promotion_item:focus{
+			text-decoration:none !important;
+
+		}
+		.promotion_item{
+			color: black;
+			.km_thumb{
+				max-width: 100%;
+			}
+			.km_des{
+				text-align: justify;
+			}
+		}
+	}
+
+	.tour_list{
+		.tour_item:hover,.tour_item:focus{
+			text-decoration:none !important;
+
+		}
+		.tour_item{
+			color: black;
+			text-align: center;
+			.title_category{
+				min-height: 65px;
+			}
+			.tour_des{
+				text-align: justify;
+			}
+			img{
+				width: 100%;
+			}
+		}
+	}
+
+	.description{
+		text-align: justify;
+	}
+}
+
+.footer{
+	background-color: #222;
+	color: white;
+	margin-top: 20px;
+	border-top: 1px solid gray;
+	width: 100%;
+	display: block;
+	padding: 5px 10px;
+	vertical-align: middle;
+	/*.left{
+		display: inline-block;
+		float: left;
+		width: 50%;
+	}
+	.right{
+		display: inline-block;
+		float: right;
+		width: 50%;
+	}*/
+	.social_site_list{
+		text-align: center;
+		vertical-align: middle;
+	}
+	p{
+		margin: 0px;
+	}
+	.social_site{
+		margin: 5px;
+		img{
+			width:45px;
+			height: 45px;
+		}
 	}
 }
 #login{

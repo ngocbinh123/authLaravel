@@ -29,6 +29,14 @@ class HomeController extends BaseController {
 		return View::make('home.index',compact('data'));
 	}
 
+	public function getAbout(){
+		return View::make('about.index',compact('data'));
+	}
+
+	public function getContact(){
+		return View::make('contact.index',compact('data'));
+	}
+
 	// profile 
 	public function showEditProfile(){
 		return View::make('editProfile');

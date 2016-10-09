@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <a class="logo" href="#">
-                        <img src="../public/assets/img/ic_logo.jpg" alt="logo" title="Hoi An Express">
+                        <img src="../public/assets/img/ic_logo.jpg" alt="logo" title="">
                     </a>
                 </div>
              </div> <!--/end row-->     
@@ -17,7 +17,7 @@
             <div class="nav">
                 
                 <div class="menu-collapser" style="display: none;">
-                    <a href="http://hoianexpress.com.vn/ha/">
+                    <a href="/">
                         <img width="auto" height="40px" class="st_logo_mobile" src="http://hoianexpress.com.vn/ha/wp-content/uploads/2016/08/logo-moi.png">
                     </a>
                     <div class="collapse-button">
@@ -28,10 +28,13 @@
                 </div>
 
                 <ul id="slimmenu" class="menu slimmenu" >
-                    <li id="menu-item-7065" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-426 current_page_item menu-item-7065"><a href="">HOME</a></li>
-                    <li id="menu-item-7065" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-426 current_page_item menu-item-7065"><a href="">ABOUT US</a></li>
-                     <li id="menu-item-7065" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-426 current_page_item menu-item-7065"><a href="">CONTACT</a></li>
-                  
+                    <li id="mn_home" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/">TRANG CHỦ</a></li>
+                     <li id="mn_about" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/about">GIỚI THIỆU</a></li>
+                    <li id="mn_internal" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="">TOUR TRONG NƯỚC</a></li>
+                    <li id="mn_external" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="">TOUR NƯỚC NGOÀI</a></li>
+                    <li id="mn_team_building" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">TEAM BUILDING</a></li>
+                    <li id="mn_contact" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/contact">LIÊN HỆ</a></li>
+                  <!-- 
                     <li id="menu-item-7051" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children has-submenu dropdown ">
                         <a href="#">
                             TOURS
@@ -46,12 +49,7 @@
                             <a href="#">Travel abroad</a>
                         </div>
                         <span class="sub-toggle"><i class="fa fa-angle-down"></i></span>
-                    </li>
-
-                     <li id="menu-item-7065" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-426 current_page_item menu-item-7065">
-                        <a href="">BLOG</a>
-                     </li>
-                    </li>
+                    </li> -->
                 </ul>    
 
             </div><!--/end nav--> 

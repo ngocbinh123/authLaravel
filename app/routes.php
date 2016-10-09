@@ -30,6 +30,12 @@ Route::filter('basic.once', function()
 //Home
 Route::get('/',array('uses'=>'HomeController@getHome'));
 
+// about 
+Route::get('/about',array('uses'=>'HomeController@getAbout'));
+
+// about 
+Route::get('/contact',array('uses'=>'HomeController@getContact'));
+
 /*-------------Form authentication------------------*/
 //login
 Route::get('/login',array('uses'=>'UserController@getLogin'));

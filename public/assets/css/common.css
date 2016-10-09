@@ -35,6 +35,8 @@ header .logo {
   display: block; }
   header .logo img {
     width: 64px; }
+header ul.menu li a {
+  font-weight: bold; }
 header .sticky-wrapper {
   text-align: center; }
   header .sticky-wrapper ul li .dropdown-content {
@@ -263,17 +265,75 @@ ul.slimmenu li .sub-toggle {
 .container {
   width: 100% !important;
   padding: 10px; }
-  .container .titleForm {
+  .container .title, .container .title_category {
     text-align: center;
     background-color: #f4726d;
-    margin: 0 -10px;
-    padding: 10px; }
-    .container .titleForm h3 {
-      margin: 0;
-      color: white;
-      font-weight: bold; }
+    color: white;
+    font-weight: bold;
+    vertical-align: middle;
+    padding: 5px; }
   .container .error {
     color: red; }
+  .container .first_contentrow {
+    margin: 10px; }
+  .container .promotion_list {
+    text-align: center;
+    border: 5px solid #f4726d;
+    border-radius: 10px;
+    margin: 20px 0px 0px 0px; }
+    .container .promotion_list h2 {
+      color: #f4726d; }
+    .container .promotion_list .promotion_item:hover, .container .promotion_list .promotion_item:focus {
+      text-decoration: none !important; }
+    .container .promotion_list .promotion_item {
+      color: black; }
+      .container .promotion_list .promotion_item .km_thumb {
+        max-width: 100%; }
+      .container .promotion_list .promotion_item .km_des {
+        text-align: justify; }
+  .container .tour_list .tour_item:hover, .container .tour_list .tour_item:focus {
+    text-decoration: none !important; }
+  .container .tour_list .tour_item {
+    color: black;
+    text-align: center; }
+    .container .tour_list .tour_item .title_category {
+      min-height: 65px; }
+    .container .tour_list .tour_item .tour_des {
+      text-align: justify; }
+    .container .tour_list .tour_item img {
+      width: 100%; }
+  .container .description {
+    text-align: justify; }
+
+.footer {
+  background-color: #222;
+  color: white;
+  margin-top: 20px;
+  border-top: 1px solid gray;
+  width: 100%;
+  display: block;
+  padding: 5px 10px;
+  vertical-align: middle;
+  /*.left{
+  	display: inline-block;
+  	float: left;
+  	width: 50%;
+  }
+  .right{
+  	display: inline-block;
+  	float: right;
+  	width: 50%;
+  }*/ }
+  .footer .social_site_list {
+    text-align: center;
+    vertical-align: middle; }
+  .footer p {
+    margin: 0px; }
+  .footer .social_site {
+    margin: 5px; }
+    .footer .social_site img {
+      width: 45px;
+      height: 45px; }
 
 #login ul {
   list-style: none;
