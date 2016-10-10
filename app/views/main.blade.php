@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>@yield('title')</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="stylesheet" type="text/css" href="{{Asset('assets/css/bootstrap.min.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{Asset('assets/css/common.css')}}">
 	<script type="text/javascript" src="{{Asset('assets/js/jquery-2.1.1.min.js')}}"></script>
