@@ -55,8 +55,18 @@
 			.tour_des{
 				text-align: justify;
 			}
+			
 			img{
 				width: 100%;
+				-webkit-transition-duration: 0.5s; /*Webkit: Animation duration*/
+				-moz-transition-duration: 0.5s; /*Mozilla duration version*/
+				-o-transition-duration: 0.5s; /*Opera duration version*/
+				margin: 0 10px 5px 0; /*margin between images*/
+				}
+			img:hover{
+				-webkit-transform:scale(1.1); /*Webkit: Scale up image to 1.2x original size*/
+				-moz-transform:scale(1.1); /*Mozilla scale version*/
+				-o-transform:scale(1.1); /*Opera scale version*/
 			}
 		}
 	}

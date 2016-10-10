@@ -1,10 +1,12 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="vi-VN">
 
 <head>
 	<title>@yield('title')</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<link rel="icon" href="../public/assets/img/ic_logo.jpg" type="image/png">
+	<meta name="description" content="Bàn chân Việt bước trên mọi nẻo đường">
 	<link rel="stylesheet" type="text/css" href="{{Asset('assets/css/bootstrap.min.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{Asset('assets/css/common.css')}}">
 	<script type="text/javascript" src="{{Asset('assets/js/jquery-2.1.1.min.js')}}"></script>
@@ -21,8 +23,6 @@
 		<div id="myCarousels" class="carouselslide">@include('include._slideDemo')</div> 
 	</div>
 	<div class="content container">@yield('content')</div>
-	<div class="bottom">
-		<div id="" class="footer">@include('include._footer')</div> 
-	</div>	
+	<footer id="" class="footer">@include('include._footer')</footer> 	
 </body>
 </html>
