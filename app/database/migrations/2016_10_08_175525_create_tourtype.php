@@ -16,7 +16,7 @@ class CreateTourtype extends Migration {
 		{
 			$table->increments('id');
 			$table->string('name');
-			$table->string('name_vn');
+			$table->string('name_en');
 			$table->timestamps();
 		});
 	}

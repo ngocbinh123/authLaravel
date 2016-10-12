@@ -36,6 +36,19 @@ Route::get('/about',array('uses'=>'HomeController@getAbout'));
 // about 
 Route::get('/contact',array('uses'=>'HomeController@getContact'));
 
+// internal tour list 
+Route::get('/intour',array('uses'=>'TourController@getInternalTourList'));
+
+
+// external tour list 
+Route::get('/extour',array('uses'=>'TourController@getExternalTourList'));
+
+// team building tour list 
+Route::get('/teamtour',array('uses'=>'TourController@getTeamBuildingTourList'));
+
+// tour list 
+Route::get('/tour',array('uses'=>'TourController@getTourList'));
+
 /*-------------Form authentication------------------*/
 //login
 Route::get('/login',array('uses'=>'UserController@getLogin'));
