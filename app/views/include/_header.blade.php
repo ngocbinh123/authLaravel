@@ -25,10 +25,10 @@
                         </a>
 
                         <div class="dropdown-content" style="left:0;">
-                            <a href="/intour">Du Lịch Miền Bắc</a>
-                            <a href="/intour">Du Lịch Miền Trung</a>
-                            <a href="/intour">Du Lịch Miền Nam</a>
-                            <a href="/intour">Du Lịch Tết</a>
+                            <a href="/tour-type/1">Du Lịch Miền Bắc</a>
+                            <a href="/tour-type/2">Du Lịch Miền Trung</a>
+                            <a href="/tour-type/3">Du Lịch Miền Nam</a>
+                            <a href="/tour-type/4">Du Lịch Tết</a>
                          
                         </div>
                         <span class="sub-toggle"><i class="fa fa-angle-down"></i></span>
@@ -41,14 +41,14 @@
                         </a>
 
                         <div class="dropdown-content" style="left:0;">
-                            <a href="/intour">Du Lịch Châu Á</a>
-                            <a href="/intour">Du Lịch Châu Âu</a>
-                            <a href="/intour">Du Lịch Châu Mỹ</a>
-                            <a href="/intour">Du Lịch Châu Úc</a>   
+                            <a href="/tour-type/5">Du Lịch Châu Á</a>
+                            <a href="/tour-type/6">Du Lịch Châu Âu</a>
+                            <a href="/tour-type/7">Du Lịch Châu Mỹ</a>
+                            <a href="/tour-type/8">Du Lịch Châu Úc</a>   
                         </div>
                         <span class="sub-toggle"><i class="fa fa-angle-down"></i></span>
                     </li>
-                    <li id="mn_team_building" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/">TEAM BUILDING</a></li>
+                    <li id="mn_team_building" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/tour-type/9">TEAM BUILDING</a></li>
                     <li id="mn_contact" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/contact">LIÊN HỆ</a></li>
                 </ul>    
 

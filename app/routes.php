@@ -36,6 +36,10 @@ Route::get('/about',array('uses'=>'HomeController@getAbout'));
 // about 
 Route::get('/contact',array('uses'=>'HomeController@getContact'));
 
+// internal tour list by rypwtour 
+Route::get('/tour-type/{object}',array('uses'=>'TourController@getType'));
+
+
 // internal tour list 
 Route::get('/intour',array('uses'=>'TourController@getInternalTourList'));
 

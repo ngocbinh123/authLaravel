@@ -14,17 +14,25 @@ class TourController extends BaseController {
 	}
 
 	public function getInternalTourList(){
-
 		// $data['pList']=Apptou::make('ProductListController')->{'getDataProductListAll'}();
 		// $data['pType']=App::make('ProductTypeController')->{'getDataProductTypeAll'}();
 		// $data['pro']=App::make('ProductController')->{'getDataProductAll'}();
 		// return View::make('home.index', compact('data'));
 		$data['title'] = "Tour trong nước";
-		$data["tourList"] = DB::table('Tour')->get();
-		//$data["tourList"] = $user = DB::table('tour')->where('type', '<', 5);
+		//$data["tourList"] = DB::table('Tour')->get();
+		$data["tourList"]  = DB::table('Tour')->where('type_id', '<', 5)->get();
+
 		return View::make('tour.index',compact('data'));
 	}
 
+	public function getType($obj){
+		$data['title'] = "Tour trong nước";
+		//$data["tourList"] = DB::table('Tour')->get();
+		$data["tourList"]  = DB::table('Tour')->where('type_id', '=', $obj)->get();
+
+		return View::make('tour.index',compact('data'));
+
+	}
 	public function getExternalTourList(){
 		// $data['pList']=Apptou::make('ProductListController')->{'getDataProductListAll'}();
 		// $data['pType']=App::make('ProductTypeController')->{'getDataProductTypeAll'}();

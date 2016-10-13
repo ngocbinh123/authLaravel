@@ -12,7 +12,7 @@
 	<div class="first_contentrow row"> 
 		<div class=" col-md-3 promotion_list">
 			<h2 class="">KHUYẾN MÃI</h2>
-			<a href="" class="promotion_item">
+			<a href="#" class="promotion_item">
 				<h3>Đón Giáng Sinh trên du thuyền</h3>
 				<div>
 					<img src="../public/assets/img/tour/img_tour_15.jpg" class="km_thumb">
@@ -23,8 +23,75 @@
 			</a>
 		</div>
   		<div class="col-md-9">
-  			<div id="tours" class="row tour_list">
-				@for($i=0;$i<4;$i++)
+  			<div id="tour" class="row tour_list">
+  				<div class="tour_item col-xs-12 col-sm-6 col-md-6">
+					<div class="wrap">
+						<a href="#">
+            				<img src="../public/assets/img/tour/tour1/1.jpg" class="attachment-tour_big_index wp-post-image" alt="title">
+            				<div class="tbToursInfo">
+                  				<div class="left">
+                    				<h3>Tour Changi, Singapore</h3>
+                    				<span class="thoigian">3 ngày 2 đêm</span><span class="gia">6,999,000 VND</span>
+				                    <div class="excerpt">
+				                    	<p></p>
+				                    </div>
+                  				</div>                 		
+                			</div>
+            			</a>
+          			</div>
+				</div>
+
+				<div class="tour_item col-xs-12 col-sm-6 col-md-6">
+					<div class="wrap">
+						<a href="#">
+            				<img src="../public/assets/img/tour/tour1/2.jpg" class="attachment-tour_big_index wp-post-image" alt="title">
+            				<div class="tbToursInfo">
+                  				<div class="left">
+                    				<h3> Tour Singapore 3 ngày 2 đêm</h3>
+                    				<span class="thoigian">3 ngày 2 đêm</span><span class="gia">6,666,000 VND</span>
+				                    <div class="excerpt">
+				                    	<p></p>
+				                    </div>
+                  				</div>                 		
+                			</div>
+            			</a>
+          			</div>
+				</div>
+
+				<div class="tour_item col-xs-12 col-sm-6 col-md-6">
+					<div class="wrap">
+						<a href="#">
+            				<img src="../public/assets/img/tour/tour1/2.jpg" class="attachment-tour_big_index wp-post-image" alt="title">
+            				<div class="tbToursInfo">
+                  				<div class="left">
+                    				<h3> Tour Singapore 3 ngày 2 đêm</h3>
+                    				<span class="thoigian">3 ngày 2 đêm</span><span class="gia">6,666,000 VND</span>
+				                    <div class="excerpt">
+				                    	<p></p>
+				                    </div>
+                  				</div>                 		
+                			</div>
+            			</a>
+          			</div>
+				</div>
+
+				<div class="tour_item col-xs-12 col-sm-6 col-md-6">
+					<div class="wrap">
+						<a href="#">
+            				<img src="../public/assets/img/tour/tour1/4.jpg" class="attachment-tour_big_index wp-post-image" alt="title">
+            				<div class="tbToursInfo">
+                  				<div class="left">
+                    				<h3>PHUKET Không Ngủ</h3>
+                    				<span class="thoigian">4 ngày 3 đêm</span><span class="gia">6,999,000 VND</span>
+				                    <div class="excerpt">
+				                    	<p></p>
+				                    </div>
+                  				</div>                 		
+                			</div>
+            			</a>
+          			</div>
+				</div>
+				<!-- @for($i=0;$i<2;$i++)
   					<div class="tour_item col-xs-12 col-sm-6 col-md-6">
   						<div class="wrap">
   							<a href="/">
@@ -41,7 +108,7 @@
                 			</a>
               			</div>
   					</div>
-				@endfor
+				@endfor -->
   			</div>
   		</div>
 	</div>
@@ -51,7 +118,7 @@
 			@for($i=0;$i<6;$i++)
 					<div class="tour_item col-sm-4 col-md-4">
 						<div class="wrap">
-							<a href="/">
+							<a href="#">
                 			<img src="../public/assets/img/tour/tour1/1.jpg" class="attachment-tour_big_index wp-post-image" alt="title">
                 			<div class="tbToursInfo">
                   				<div class="left">

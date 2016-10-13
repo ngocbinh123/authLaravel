@@ -5,6 +5,10 @@
 @endsection
 
 @section('content')
+<div class="row">
+	<div class="col-md-8"></div>
+	<div class="col-md-4"></div>
+</div>
 <h3 class="title">Thông tin liên hệ VIỆT STEP: </h3>
 <div class="description">
 	<h3>Văn phòng chính: </h3>

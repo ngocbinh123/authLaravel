@@ -11,7 +11,7 @@
 	        <div class="col-md-3 tour_img">
 	            <div class="">
 	                <a class="" href="#">
-	                	<img width="360" height="270" src="../public/assets/img/tour/tour{{$tour->id}}/1.jpg">                
+	                	<img width="360" height="270" src="../../assets/img/tour/tour{{$tour->id}}/1.jpg">                
 	                </a>
 	            </div>
 	        </div>
