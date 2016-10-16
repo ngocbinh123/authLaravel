@@ -1,11 +1,29 @@
-header{
-	.logo{
-		display: block;
-		img{
-			width:64px;
 
-		}
-	}
+.navbar-inverse{
+  .header-top{
+
+  }
+
+  background: #e9ebee;
+  .float_left{
+    float: left;
+  }
+  .social_site_list{
+    float: right;
+    text-align: right;
+    margin: 5px 15px 5px 5px;
+    img{
+      width:45px;
+      height: 45px;
+    }
+  }
+  .logo{
+    display: block;
+    img{
+      width:128px;
+
+    }
+  }
   
   ul.menu{
     li{
@@ -15,21 +33,19 @@ header{
     }
   }
 
-	.sticky-wrapper{
-		text-align: center;
-		ul{
-			li{
-				.dropdown-content{
-					text-align: left;
-				}
-			}
-		}
-	}
+  .sticky-wrapper{
+    text-align: center;
+    ul{
+      li{
+        .dropdown-content{
+          text-align: left;
+        }
+      }
+    }
+  }
 
-
- /* #slimmenu{left:0px;top:0px;position:fixed;z-index:98;width:100%;}*/
+   /* #slimmenu{left:0px;top:0px;position:fixed;z-index:98;width:100%;}*/
 }
-
 
 /*sticky options ====================================================================================*/
 /*.sticky {

@@ -1,11 +1,24 @@
 <header id="main-header" class="st_menu">
     <div class="header-top ">
         <div class="container">
-            <div class="row">
-                <div class="col-md-3">
+            <div class="">
+                <div class="float_left">
                     <a class="logo" href="#">
                         <img src="../public/assets/img/ic_logo.png" alt="logo" title="Viet Step Travel">
                     </a>
+                </div>
+                <div class="float_right social_site_list">
+                    <div class="row">
+                        <a href="https://www.youtube.com/" class="social_site">
+                            <img src="../public/assets/img/ic_youtube.png">
+                        </a>
+                        <a href="https://plus.google.com" class="social_site">
+                            <img src="../public/assets/img/ic_google.png">
+                        </a>
+                         <a href="https://www.facebook.com/" class="social_site">
+                            <img src="../public/assets/img/ic_fb.png">
+                        </a>
+                    </div>
                 </div>
              </div> <!--/end row-->     
         </div> <!--/end container-->     

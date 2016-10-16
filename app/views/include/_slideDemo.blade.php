@@ -1,7 +1,7 @@
  
 <div id="slider" class="nivoSlider">
     @for($i =1; $i < 6; $i++)
-        <img src="../public/assets/img/slider/img_slider_0{{$i}}.jpg" />
+        <img src="../public/assets/img/slider/img_slider_0{{$i}}.png" />
     @endfor 
 </div>
 <link rel="stylesheet" type="text/css" href="{{Asset('assets/css/nivo-slider.css')}}">
@@ -19,7 +19,3 @@
         });
     });
 </script>
-
-
-
-
