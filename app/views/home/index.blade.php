@@ -25,7 +25,7 @@
             				<img src="../public/assets/img/tour/special/1.png" class="attachment-tour_big_index wp-post-image" alt="title">
             				<div class="tbToursInfo">
                   				<div class="left">
-                    				<h3>Tour Miền Tây</h3>
+                    				<h3>Miền Tây</h3>
                     				<span class="thoigian">3 ngày 2 đêm</span>
                     				<span class="gia">1,999,000 VND</span>
 				                    <div class="excerpt">
@@ -43,7 +43,7 @@
             				<img src="../public/assets/img/tour/special/2.png" class="attachment-tour_big_index wp-post-image" alt="title">
             				<div class="tbToursInfo">
                   				<div class="left">
-                    				<h3>Tour Singapore</h3>
+                    				<h3>Singapore</h3>
                     				<span class="thoigian">3 ngày 2 đêm</span>
                     				<span class="gia">6,666,000 VND</span>
 				                    <div class="excerpt">
