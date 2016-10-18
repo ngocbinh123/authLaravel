@@ -15,7 +15,7 @@
                         <a href="https://plus.google.com" class="social_site">
                             <img src="../public/assets/img/ic_google.png">
                         </a>
-                         <a href="https://www.facebook.com/" class="social_site">
+                         <a href="https://www.facebook.com/buocdiviettravel" class="social_site">
                             <img src="../public/assets/img/ic_fb.png">
                         </a>
                     </div>

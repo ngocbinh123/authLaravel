@@ -6,10 +6,10 @@
 @media (max-width: 1240px){
 	.container{
 		.promotion_list{
-			height: auto !important;
+			height: auto ;
 			padding: 10px;
 			img{
-				width: 50% !important;
+				width: 50%;
 			}
 		}
 	}
@@ -366,3 +366,17 @@ transform: translate3d(0,0,0);
   .float_right{
   	float: right;
   }
+
+
+ #about{
+ 	text-align: justify;
+ 	.center{
+ 		text-align: center;
+ 		img{
+ 			width: 50%;
+ 		}
+ 	}
+ 	ul{
+ 		 list-style-type: none;
+ 	}
+ } 

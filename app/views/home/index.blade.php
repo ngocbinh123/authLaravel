@@ -135,8 +135,8 @@
             			<div class="tbToursInfo">
               				<div class="left">
                 				<h3>Hàn Quốc</h3>
-                				<span class="thoigian">3 ngày 2 đêm</span>
-                				<span class="gia">2.380.000đ</span>				          
+                				<span class="thoigian">4 ngày 4 đêm</span>
+                				<span class="gia">10,900,000 VND/span>				          
               				</div>                 		
             			</div>
         			</a>

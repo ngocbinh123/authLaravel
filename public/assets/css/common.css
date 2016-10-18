@@ -31,6 +31,11 @@ nav.navbar ul.drop li:hover, nav.navbar ul.drop li a:hover {
   background: #fbfbfb;
   color: red; }
 
+/*#menu1-sticky-wrapper{
+    position: fixed;
+    top: 70px;
+    z-index: 100;
+}*/
 .navbar-inverse {
   background: #e9ebee;
   /* #slimmenu{left:0px;top:0px;position:fixed;z-index:98;width:100%;}*/ }
@@ -274,10 +279,10 @@ ul.slimmenu li .sub-toggle {
 
 @media (max-width: 1240px) {
   .container .promotion_list {
-    height: auto !important;
+    height: auto;
     padding: 10px; }
     .container .promotion_list img {
-      width: 50% !important; } }
+      width: 50%; } }
 .container {
   width: 100% !important;
   padding: 10px; }
@@ -569,5 +574,14 @@ figure.effect-sadie:hover p {
 
 .float_right {
   float: right; }
+
+#about {
+  text-align: justify; }
+  #about .center {
+    text-align: center; }
+    #about .center img {
+      width: 50%; }
+  #about ul {
+    list-style-type: none; }
 
 /*# sourceMappingURL=common.css.map */
