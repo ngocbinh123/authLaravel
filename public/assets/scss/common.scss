@@ -28,16 +28,18 @@
 	.error{
 		color:$color-error;
 	}
-	.first_contentrow{
+	.first_content{
 		margin: 10px;
+		clear: both;
 	}
 	.promotion_list{
+		display: block;
+		vertical-align: middle;
 		text-align: center;
 		border: 5px solid $bg-title;
 		border-radius: 10px;
 		margin: 20px 0px 0px 0px;
-		height: 87%;
-		padding: 30px 0px 0px 0px;
+		padding: 142px 0px;
 		img{
  
 		}
@@ -49,9 +51,11 @@
 
 		}
 		.promotion_item{
+			display: inline-block;
 			color: black;
 			.km_thumb{
-				width: 100%;
+				width: auto;
+				height: 285px;
 			}
 			.km_des{
 				text-align: justify;
@@ -59,10 +63,22 @@
 		}
 	}
 
+	.secon_content{
+		.tour_list{
+			margin-left: 0px;
+			margin-right: 0px;
+			.tour_item{
+				min-width: 334px;
+				padding: 5px;
+
+			}
+		}
+	}
+
 	.tour_list{
+
 		.tour_item:hover,.tour_item:focus{
 			text-decoration:none !important;
-
 		}
 		.tour_item{
 			color: black;
@@ -76,6 +92,13 @@
 			img{
 				width: 100%;
 			}
+
+			.col-md-4, .col-md-8{
+					display: inline-block;
+				}
+				.col-md-8{
+					float: right;
+				}
 
 
 		}
@@ -280,6 +303,12 @@ transform: translate3d(0,0,0);
   width: 100%;*/
   background: rgba(0, 0, 0, 0.8);
   /*height: 80px;*/
+  color: white;
+  .left.row{
+  	.col-sm-8{
+  		text-align: right;
+  	}
+  }
 }
 .tour_list .wrap .tbToursInfo .left h3 {
   margin: 0;
@@ -292,9 +321,8 @@ transform: translate3d(0,0,0);
 }
 .tour_list .wrap .tbToursInfo .left .gia {
   color: yellow;
-  margin: 10px;
-  font-weight: 600;
-  font-size: 24px;
+  font-weight: bold;
+  font-size: 22px;
 }
 .tour_list .wrap .tbToursInfo .left .thoigian {
   display: block;
@@ -352,10 +380,10 @@ transform: translate3d(0,0,0);
   bottom: 18px;
   right: 150px;
 }
-.tour_list .col-xs-8 .gia {
+.tour_list .gia {
   font-size: 24px;
 }
-.tour_list .col-xs-4 h3 {
+.tour_list h3 {
   margin-bottom: 0 !important;
 }
 
@@ -379,3 +407,11 @@ transform: translate3d(0,0,0);
  		 list-style-type: none;
  	}
  } 
+
+.align_left{
+	text-align: left;
+}
+
+.align_right{
+	text-align: right;
+}
