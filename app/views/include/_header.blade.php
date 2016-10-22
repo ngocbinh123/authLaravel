@@ -4,19 +4,19 @@
             <div class="">
                 <div class="float_left">
                     <a class="logo" href="#">
-                        <img src="../public/assets/img/ic_logo.png" alt="logo" title="Viet Step Travel">
+                        <img src="{{Asset('assets/img/ic_logo.png')}}" alt="logo" title="Viet Step Travel">
                     </a>
                 </div>
                 <div class="float_right social_site_list">
                     <div class="row">
                         <a href="https://www.youtube.com/" class="social_site">
-                            <img src="../public/assets/img/ic_youtube.png">
+                            <img src="{{Asset('assets/img/ic_youtube.png')}}">
                         </a>
                         <a href="https://plus.google.com" class="social_site">
-                            <img src="../public/assets/img/ic_google.png">
+                            <img src="{{Asset('assets/img/ic_google.png')}}">
                         </a>
                          <a href="https://www.facebook.com/buocdiviettravel" class="social_site">
-                            <img src="../public/assets/img/ic_fb.png">
+                            <img src="{{Asset('assets/img/ic_fb.png')}}">
                         </a>
                     </div>
                 </div>

@@ -28,7 +28,7 @@
 			<p class="address">Address: 159/40 Bach Dang st.,Ward 02, Tan Binh Dist., HCMC</p>
 		</div>
 		<div class="">
-			<p class="fb_url">Facebook: www.facebook.com/vietsteptravel</p>
+			<p class="fb_url">Facebook: https://www.facebook.com/buocdiviettravel</p>
 			<p class="hot_line">Hotline: ……………………………</p>
 			<p class="phone">Phone: ……………………………</p>
 			<p class="email">Email: info@vietsteptravel.com.vn</p>

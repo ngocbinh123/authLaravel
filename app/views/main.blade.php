@@ -5,14 +5,13 @@
 	<title>@yield('title')</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="../public/assets/img/ic_logo.png" type="image/png">
+	<link rel="icon" href="{{Asset('assets/img/ic_logo.png')}}" type="image/png">
 	<meta name="description" content="Bàn chân Việt bước trên mọi nẻo đường">
 	<link rel="stylesheet" type="text/css" href="{{Asset('assets/css/bootstrap.min.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{Asset('assets/css/common.css')}}">
 	<script type="text/javascript" src="{{Asset('assets/js/jquery-2.1.1.min.js')}}"></script>
-	<script type="text/javascript" src="{{Asset('assets/js/jquery-validate/jquery.validate.min.js')}}"></script>
 	<script type="text/javascript" src="{{Asset('assets/js/bootstrap.min.js')}}"></script>
-	<script type="text/javascript" src="{{Asset('assets/js/myValidate.js')}}"></script>
+	<script type="text/javascript" src="{{Asset('assets/js/common.js')}}"></script>
 </head>
 <body>
 	<!-- Navigation -->

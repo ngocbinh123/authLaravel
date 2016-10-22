@@ -1,0 +1,103 @@
+version: '2'
+
+services:
+
+### Workspace Utilities Container ###########################
+
+    workspace:
+        build:
+            context: ./workspace
+            args:
+                - INSTALL_NODE=true
+                - INSTALL_YARN=true
+                - COMPOSER_GLOBAL_INSTALL=false
+                - PUID=1000
+                - PGID=1000
+                - NODE_VERSION=stable
+                - TZ=UTC+7
+        volumes_from:
+            - volumes_source
+        extra_hosts:
+            # IMPORTANT: Replace with your Docker Host IP (will be appended to /etc/hosts)
+            - "dockerhost:10.0.75.1"
+        tty: true
+
+### PHP-FPM Container #######################################
+
+    php-fpm:
+        build:
+            context: ./php-fpm
+        volumes_from:
+            - volumes_source
+        expose:
+            - "9000"
+        links:
+            - workspace
+        extra_hosts:
+            # IMPORTANT: Replace with your Docker Host IP (will be appended to /etc/hosts)
+            - "dockerhost:10.0.75.1"
+        environment:
+            # IMPORTANT: Set the Remote Interpreter entry matching name to `laravel`
+            - PHP_IDE_CONFIG="serverName=laravel"
+
+### Apache Server Container ##################################
+
+    apache2:
+        build:
+            context: ./apache2
+            args:
+                - PHP_SOCKET=php-fpm:9000
+        volumes_from:
+            - volumes_source
+        volumes:
+            - ./logs/apache2:/var/log/apache2
+        ports:
+            - "8000:80"
+            - "44300:443"
+        links:
+            - php-fpm
+
+### MySQL Container #########################################
+
+    mysql:
+        build: ./mysql
+        volumes_from:
+            - volumes_data
+        ports:
+            - "33060:3306"
+        environment:
+            MYSQL_DATABASE: homestead
+            MYSQL_USER: homestead
+            MYSQL_PASSWORD: secret
+            MYSQL_ROOT_PASSWORD: root
+
+### phpMyAdmin Container ##################################
+
+    # phpmyadmin:
+    #     build: ./phpmyadmin
+    #     environment:
+    #         PMA_ARBITRARY: 1
+    #         MYSQL_USER: homestead
+    #         MYSQL_PASSWORD: secret
+    #         MYSQL_ROOT_PASSWORD: root
+    #     volumes_from:
+    #         - volumes_data
+    #     ports:
+    #         - "8080:80"
+    #     links:
+    #         - "mysql:db"
+
+### Laravel Application Code Container ######################
+
+    volumes_source:
+        image: tianon/true
+        volumes:
+            - ../:/var/www/laravel
+
+### Databases Data Container ################################
+
+    volumes_data:
+        image: tianon/true
+        volumes:
+            - ./data/mysql:/var/lib/mysql
+            - ./data/sessions:/sessions

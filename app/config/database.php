@@ -54,10 +54,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost:8889',
-			'database'  => 'authLaravel',
-			'username'  => 'root',
-			'password'  => '123456', // alway account has password => you must set password for your account
+			'host'      => 'mysql',
+			'database'  => 'homestead',
+			'username'  => 'homestead',
+			'password'  => 'secret', // alway account has password => you must set password for your account
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

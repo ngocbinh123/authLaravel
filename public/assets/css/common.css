@@ -302,7 +302,7 @@ ul.slimmenu li .sub-toggle {
     border: 5px solid #f4726d;
     border-radius: 10px;
     margin: 20px 0px 0px 0px;
-    height: 630px;
+    height: 87%;
     padding: 30px 0px 0px 0px; }
     .container .promotion_list h2 {
       color: #f4726d; }
@@ -489,7 +489,7 @@ figure.effect-sadie:hover p {
   bottom: 0;
   width: 100%;*/
   background: rgba(0, 0, 0, 0.8);
-  height: 80px; }
+  /*height: 80px;*/ }
 
 .tour_list .wrap .tbToursInfo .left h3 {
   margin: 0;
@@ -504,12 +504,11 @@ figure.effect-sadie:hover p {
   color: yellow;
   margin: 10px;
   font-weight: 600;
-  font-size: 18px; }
+  font-size: 24px; }
 
 .tour_list .wrap .tbToursInfo .left .thoigian {
   display: block;
   color: white;
-  margin-left: 10px;
   font-size: 12px; }
 
 .tour_list .wrap .tbToursInfo .left .excerpt {
