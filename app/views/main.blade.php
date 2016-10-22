@@ -4,7 +4,7 @@
 <head>
 	<title>@yield('title')</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="icon" href="{{Asset('assets/img/ic_logo.png')}}" type="image/png">
 	<meta name="description" content="Bàn chân Việt bước trên mọi nẻo đường">
 	<link rel="stylesheet" type="text/css" href="{{Asset('assets/css/bootstrap.min.css')}}">

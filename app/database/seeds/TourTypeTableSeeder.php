@@ -1,39 +1,19 @@
 <?php
 class TourTypeTableSeeder extends Seeder{
-	public function run(){{
-		// $arrTypes=[
-		// 	[
-		// 		'name'=>'Southward',
-		// 		'name_vn'=>'Miền Nam'
-		// 	],
-		// 	[
-		// 		'name'=>'Norland',
-		// 		'name_vn'=>'Miền Bắc'
-		// 	],
-		// 	[
-		// 		'name'=>'Central',
-		// 		'name_vn'=>'Miền Trung'
-		// 	],
-		// 	[
-		// 		'name'=>'West',
-		// 		'name_vn'=>'Miền Tây'
-		// 	],
-		// 	[
-		// 		'name'=>'Abroad',
-		// 		'name_vn'=>'Nước Ng'
-		// 	]
-		// ];
+	public function run(){
+		$tours = [
+			['name' => 'Miền Nam', 'refer_name' => 'mien-nam'],
+			['name' => 'Miền Bắc', 'refer_name' => 'mien-bac'],
+			['name' => 'Miền Trung', 'refer_name' => 'mien-trung'],
+			['name' => 'Tây Nguyên', 'refer_name' => 'tay-nguyen'],
+			['name' => 'Tết', 'refer_name' => 'tet'],			
+			['name' => 'Du lịch Châu Á', 'refer_name' => 'chau-a'],
+			['name' => 'Du lịch Châu Âu', 'refer_name' => 'chau-au'],
+			['name' => 'Du lịch Châu Mỹ', 'refer_name' => 'chau-my'],
+			['name' => 'Du lịch Châu Úc', 'refer_name' => 'chau-uc'],
+			['name' => 'Team building', 'refer_name' => 'team-building']
+		];
 
-		// $foreach ($arrTypes as $item) {
-		// 	$tourType = mew TourType();
-		// 	$tourType->name = $item['name'];
-		// 	$tourType->name_vn = $item['name_vn'];
-		// 	$tourType->save();
-		// }
-
-		DB::table('TourType')->insert([
-            'name' => 'Southward',
-            'name_vn' => 'Miền Nam',
-        ]);
+		DB::table('TourType')->insert($tours);
 	}
 }

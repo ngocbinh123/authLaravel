@@ -38,10 +38,10 @@
                         </a>
 
                         <div class="dropdown-content" style="left:0;">
-                            <a href="/tour-type/1">Du Lịch Miền Bắc</a>
-                            <a href="/tour-type/2">Du Lịch Miền Trung</a>
-                            <a href="/tour-type/3">Du Lịch Miền Nam</a>
-                            <a href="/tour-type/4">Du Lịch Tết</a>
+                            <a href="/tour-type/mien-bac">Du Lịch Miền Bắc</a>
+                            <a href="/tour-type/mien-trung">Du Lịch Miền Trung</a>
+                            <a href="/tour-type/mien-nam">Du Lịch Miền Nam</a>
+                            <a href="/tour-type/tet">Du Lịch Tết</a>
                          
                         </div>
                         <span class="sub-toggle"><i class="fa fa-angle-down"></i></span>
@@ -54,10 +54,10 @@
                         </a>
 
                         <div class="dropdown-content" style="left:0;">
-                            <a href="/tour-type/5">Du Lịch Châu Á</a>
-                            <a href="/tour-type/6">Du Lịch Châu Âu</a>
-                            <a href="/tour-type/7">Du Lịch Châu Mỹ</a>
-                            <a href="/tour-type/8">Du Lịch Châu Úc</a>   
+                            <a href="/tour-type/chau-a">Du Lịch Châu Á</a>
+                            <a href="/tour-type/chau-au">Du Lịch Châu Âu</a>
+                            <a href="/tour-type/chau-my">Du Lịch Châu Mỹ</a>
+                            <a href="/tour-type/chau-uc">Du Lịch Châu Úc</a>   
                         </div>
                         <span class="sub-toggle"><i class="fa fa-angle-down"></i></span>
                     </li>

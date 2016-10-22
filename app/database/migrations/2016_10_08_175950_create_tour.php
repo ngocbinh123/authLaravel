@@ -16,21 +16,13 @@ class CreateTour extends Migration {
 		{
 			$table->increments('id');
 			$table->string('name');
-			$table->string('short_description');
-			$table->string('description');
-			$table->string('price');
-			$table->string('place');
-			$table->string('duration');
-			$table->string('start_time');
+			$table->string('short_description')->nullable();
+			$table->string('description')->nullable();
+			$table->string('price')->nullable();
+			$table->string('place')->nullable();
+			$table->string('duration')->nullable();
+			$table->string('start_time')->nullable();
 
-
-			$table->string('name_en');
-			$table->string('short_description_en');
-			$table->string('description_en');
-			$table->string('price_en');
-			$table->string('place_en');
-			$table->string('duration_en');
-			$table->string('start_time_en');
 
 	        // foreign key
 			$table->integer('type_id')->unsigned();

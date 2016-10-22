@@ -20,12 +20,18 @@ class HomeController extends BaseController {
 	//public static $data['pType']=App::make('ProductTypeController')->{'getAll'}();
 
 	/*-------------Show page------------------*/
+	
 	public function getHome(){
-		// $data['pList']=App::make('ProductListController')->{'getDataProductListAll'}();
-		// $data['pType']=App::make('ProductTypeController')->{'getDataProductTypeAll'}();
-		// $data['pro']=App::make('ProductController')->{'getDataProductAll'}();
-		// return View::make('home.index', compact('data'));
-
+		$hot_tag = "hot";
+		$special_tag = "special";
+		
+		$data['title'] = "Việt Step Travel";
+		
+		$data[$hot_tag]  = DB::table('Tour')
+			->where('Tour.tag', '=', $hot_tag)->get();
+		
+		$data[$special_tag]  = DB::table('Tour')
+			->where('Tour.tag', '=', $special_tag)->get();
 		return View::make('home.index',compact('data'));
 	}
 
@@ -41,12 +47,5 @@ class HomeController extends BaseController {
 	public function showEditProfile(){
 		return View::make('editProfile');
 	}
-
-	/*-------------Get data------------------*/
-	/*public function getProductList(){
-		$proLs = DB::table('productType')->get();
-		return $proLs;
-	}*/
-
 }
 

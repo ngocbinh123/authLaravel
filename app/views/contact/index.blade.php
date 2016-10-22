@@ -8,11 +8,13 @@
 <h3 class="title">Thông tin liên hệ VIỆT STEP: </h3>
 <div class="row">
 	<div class="col-md-8">
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=IzaSyBWg_kKRzXK-7J6QZM-yeYnKyVBZ309l-M=initMap"
- type="text/javascript"></script>
+	<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3SLEQ6aJbxF0ggqTnnKbaRc3aSh4dN4Y=initMap"
+ type="text/javascript"></script> -->
+ 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyrCMlIMI8OoEf2Y9ukaE7Sys63UZg2Ww&callback=initMap"
+    async defer></script>
 		<script async defer src="https://maps.googleapis.com/maps/api/js…"type="text/javascript"></script>
 		<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
-		<div style='overflow:hidden;height:440px;width:700px;'>
+		<div style='overflow:hidden;height:440px;width:600px;'>
 			<div id='gmap_canvas' style='height:440px;width:700px;'></div>
 			<div>
 				<small>
@@ -38,7 +40,7 @@
 					map: map,position: new google.maps.LatLng(10.8155483,106.67479500000002)
 				});
 				infowindow = new google.maps.InfoWindow({
-					content:'<strong>Viet Step</strong><br>159 Bach Dang, Tan Binh, Ho Chi Minh, Viet Nam<br>'
+					content:'<strong>DU LỊCH BƯỚC ĐI VIỆT</strong><br>159/40 Bạch Đằng, Phường 02, Quân Tân Bình, TP.HCM<br>'
 				});
 				google.maps.event.addListener(marker, 'click', function(){
 					infowindow.open(map,marker);
@@ -50,10 +52,10 @@
 	</div>
 	<div class="col-md-4">
 		<h3>Văn phòng chính: </h3>
-		<p>Tên công ty: VIỆT STEP</p>
-		<P>Địa chỉ: 20 Cộng Hoà, Quận Tân Bình, Hồ Chí Minh, ViỆT Nam</P>
-		<p>Email: info@vietstep.com.vn</p>
-		<p>Địện thoại: 09 33 363 636</p>
+		<p>Tên công ty: CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ DU LỊCH BƯỚC ĐI VIỆT</p>
+		<P>Địa chỉ: 159/40 Bạch Đằng, Phường 02, Quân Tân Bình, TP.HCM</P>
+		<p>Email: info@vietsteptravel.com.vn</p>
+		<p>Địện thoại: ……………………………</p>
 
 		<div class="description">
 		</div>
