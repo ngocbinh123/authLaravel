@@ -37,7 +37,7 @@ nav.navbar ul.drop li:hover, nav.navbar ul.drop li a:hover {
     z-index: 100;
 }*/
 .navbar-inverse {
-  background: #e9ebee;
+  background: #000;
   /* #slimmenu{left:0px;top:0px;position:fixed;z-index:98;width:100%;}*/ }
   .navbar-inverse .social_site_list {
     float: right;

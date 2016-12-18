@@ -35,16 +35,26 @@ class UserController extends BaseController {
 
 	public function postLogin(){
 		$userData = array(
-			'email'=>Input::get('user_input'),
+			'email'=>Input::get('email'),
 			'password'=> Input::get('password')
 		);
-
+        //$results = DB::select('select * from users where id = ?', array(1));
+        $sql = 'select * from users where email = ' . $userData["email"] . ' and password = ' . $userData['password'];
+        //print_r($sql);
+//        $results = DB::select($sql);
+//
+        $results = DB::select('select * from users where email = ? and password = ?', array($userData['email'],$userData['password']));
+        $data['title'] = "thong tin tai khoan";
+        if (count($results) > 0) {
+            $data["user"] = $results[0];
+        }
+        return View::make('User.index',compact('data'));
 		// check a user data is exist in database. 
-		if(Auth::attempt($userData)){
-			return Redirect::to('/');// go to home page
-		}else{
-			return Redirect::to('login');
-		}
+//		if(Auth::attempt($userData)){
+//			return Redirect::to('/');// go to home page
+//		}else{
+//			return Redirect::to('login');
+//		}
 	}
 
 	//register 
